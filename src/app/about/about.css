@@ -1,0 +1,116 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Căn CV chính giữa màn hình */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #eef2f3, #d9e4f5);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Card CV */
+.cv-card {
+    width: 420px;
+    background: #ffffff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.12);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.cv-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Header */
+.cv-header {
+    height: 140px;
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+}
+
+/* Avatar */
+.avatar-container {
+    margin-top: -70px;
+}
+
+.avatar-container img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 5px solid #fff;
+    object-fit: cover;
+    background: #fff;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Body */
+.cv-body {
+    padding: 25px 35px;
+}
+
+.cv-name {
+    font-size: 26px;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-top: 10px;
+}
+
+.cv-id {
+    font-size: 14px;
+    color: #7f8c8d;
+    margin-bottom: 25px;
+}
+
+/* Thông tin chi tiết */
+.cv-details {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.detail-row {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    color: #555;
+}
+
+.detail-row strong {
+    min-width: 90px;
+    color: #3498db;
+}
+
+/* About */
+.about-text {
+    font-style: italic;
+    color: #666;
+    margin: 20px 0;
+    font-size: 14px;
+}
+
+/* Button */
+.btn-contact {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 12px 32px;
+    background: linear-gradient(135deg, #4facfe, #00c6ff);
+    color: #fff;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.btn-contact:hover {
+    background: linear-gradient(135deg, #00c6ff, #4facfe);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(79, 172, 254, 0.4);
+}

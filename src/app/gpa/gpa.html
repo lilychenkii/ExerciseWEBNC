@@ -1,0 +1,35 @@
+<table>
+    <tr>
+        <td>Process:</td>
+        <td>
+            <input type="text" #input_process>
+        </td> 
+    </tr>
+    <tr>
+        <td>Midterm:</td>
+        <td>
+            <input type="text" #input_midterm>
+        </td> 
+    </tr>
+    <tr>
+        <td>Final:</td>
+        <td>
+            <input type="text" #input_final>
+        </td> 
+    </tr>
+    <tr>
+        <td colspan="2">
+            <button (click)="get_gpa(input_process.value, input_midterm.value, input_final.value)">Calculate GPA</button>
+            <button (click)="reset()">Clear</button>
+        </td>
+    </tr>
+    <tr>
+        <td>Your GPA:</td>
+        <td>{{ gpaResult }}</td>
+    </tr>
+    <tr>
+        <td>Classification:</td>
+        <td>{{ classification }}</td>
+    </tr>
+</table>
+
