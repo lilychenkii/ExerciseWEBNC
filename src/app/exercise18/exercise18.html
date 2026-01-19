@@ -1,0 +1,29 @@
+<p>exercise18 works!</p>
+
+<div *ngIf="customerGroups">
+  <div *ngFor="let group of customerGroups">
+    <h3>{{group.CustomerTypeId}} - {{group.CustomerTypeName}}</h3>
+
+    <table border="1">
+      <tr>
+        <td>Id</td>
+        <td>Name</td>
+        <td>Email</td>
+        <td>Age</td>
+        <td>#</td>
+      </tr>
+      <tbody *ngFor="let customer of group.Customers">
+        <tr>
+          <td>{{customer.Id}}</td>
+          <td>{{customer.Name}}</td>
+          <td>{{customer.Email}}</td>
+          <td>{{customer.Age}}</td>
+          <td>
+            <img [src]="customer.Image" style="width: 80px; height: auto;">
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <br>
+  </div>
+</div>
